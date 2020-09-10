@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   EOF
 
   s.licenses = ['MIT']
-  s.required_ruby_version = '>= 2.0.0'
+  s.required_ruby_version = '>= 2.3.0'
   s.rubygems_version = '1.8.23'
 
   s.files = Dir.glob('{lib}/**/*') + %w(LICENSE README.md)
@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
   s.requirements << 'stylelint (in PATH)'
 
   s.add_dependency('pronto', '~> 0.10.0')
-  s.add_dependency('rugged', '~> 0.24', '>= 0.23.0')
-  s.add_development_dependency('rake', '~> 12.0')
+  s.add_dependency('rugged', '>= 0.24', '< 2.0')
+  s.add_development_dependency('rake', '~> 13.0')
   s.add_development_dependency('rspec', '~> 3.4')
 end
